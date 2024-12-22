@@ -54,8 +54,8 @@ Ensure you have the following installed on your system:
 **Request Body:**
 ```json
 {
-  "username": "user1",
-  "password": "password123"
+  "username": "user",
+  "password": "user@123"
 }
 ```
 
@@ -70,8 +70,8 @@ Ensure you have the following installed on your system:
 **Request Body:**
 ```json
 {
-  "username": "user1",
-  "password": "password123"
+  "username": "user",
+  "password": "user@123"
 }
 ```
 
