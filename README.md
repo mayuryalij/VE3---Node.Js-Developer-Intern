@@ -1,4 +1,4 @@
-# Task Management API
+# Task Management API [Click here](https://ve3-node-js-developer-intern.onrender.com/api-docs/#/).
 
 This is a RESTful API for managing tasks and user authentication, built using Node.js, Express, and MongoDB.
 
@@ -15,8 +15,8 @@ Ensure you have the following installed on your system:
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone <https://github.com/mayuryalij/VE3---Node.Js-Developer-Intern>
+   cd <Server>
    ```
 
 2. Install dependencies:
@@ -30,7 +30,7 @@ Ensure you have the following installed on your system:
    Create a `.env` file in the root directory and add the following:
 
    ```env
-   PORT=3000
+   PORT=5000
    MONGODB_URI=<your-mongodb-uri>
    JWT_SECRET=<your-jwt-secret>
    ```
@@ -41,7 +41,7 @@ Ensure you have the following installed on your system:
    npm start
    ```
 
-   The server will start on `http://localhost:3000`.
+   The server will start on `http://localhost:5000`.
 
 ## API Endpoints
 
@@ -156,41 +156,9 @@ Ensure you have the following installed on your system:
 Swagger documentation is available at:
 
 ```
-http://localhost:3000/api-docs
+https://ve3-node-js-developer-intern.onrender.com/api-docs/#/
 ```
 
-## Example Requests and Responses
 
-### Register User Request:
-```bash
-curl -X POST http://localhost:3000/auth/register \
--H "Content-Type: application/json" \
--d '{"username":"user1","password":"password123"}'
-```
 
-### Register User Response:
-```json
-{
-  "message": "User registered successfully."
-}
-```
-
-### Create Task Request:
-```bash
-curl -X POST http://localhost:3000/tasks \
--H "Authorization: Bearer <your-jwt-token>" \
--H "Content-Type: application/json" \
--d '{"num":"001","title":"Task Title","description":"Task Description","writername":"Author Name"}'
-```
-
-### Create Task Response:
-```json
-{
-  "_id": "605c3a1f4e3b1e4f88c1a7c4",
-  "num": "001",
-  "title": "Task Title",
-  "description": "Task Description",
-  "writername": "Author Name",
-  "createdAt": "2023-03-25T10:30:00.000Z",
-  "updatedAt": "2023-03-25T10:30:00.000Z"
-}
+ 
