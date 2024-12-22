@@ -6,12 +6,18 @@ dotenv.config();
 
 const PORT = process.env.PORT || 3000;
 
-const connectToDatabase = require("./src/Database/db");
+const connectToDatabase = require("./src/Database/db"); 
 connectToDatabase();
 
 const app = express();
 app.use(bodyParser.json());
-app.use(cors());   
+
+const corsOptions = {
+    origin: 'https://ve3-node-js-developer-intern.onrender.com',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+};
+app.use(cors(corsOptions));
 
 const taskRoutes = require('./src/Routes/taskRoutes');
 const authRoutes = require('./src/Routes/authRoutes');
