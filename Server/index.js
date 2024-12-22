@@ -14,7 +14,6 @@ app.use(bodyParser.json());
 app.use(cors({
     origin: 'http://localhost:6000',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    credentials: true
 }));
 
 const taskRoutes = require('./src/Routes/taskRoutes');
